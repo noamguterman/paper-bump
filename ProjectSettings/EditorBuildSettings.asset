@@ -50,4 +50,37 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Color Bump 3d/Scenes/Level_14.unity
     guid: 56718677b16327744a34bda9545bd817
+  - enabled: 1
+    path: Assets/Color Bump 3d/Scenes/Level_15.unity
+    guid: dc216337ba36985478a9bd9b0f865f26
+  - enabled: 1
+    path: Assets/Color Bump 3d/Scenes/Level_16.unity
+    guid: 2dff3694b37178447953ec99b76566ae
+  - enabled: 1
+    path: Assets/Color Bump 3d/Scenes/Level_17.unity
+    guid: 10b211a96ccec6540984741c16a9643b
+  - enabled: 1
+    path: Assets/Color Bump 3d/Scenes/Level_18.unity
+    guid: 9c99263217115dd4c9fd04952572f17e
+  - enabled: 1
+    path: Assets/Color Bump 3d/Scenes/Level_19.unity
+    guid: 67a8c0a57a901034b9fbbb340ce85bf5
+  - enabled: 1
+    path: Assets/Color Bump 3d/Scenes/Level_20.unity
+    guid: 8f197e3fcd7ce294192a54696131c178
+  - enabled: 1
+    path: Assets/Color Bump 3d/Scenes/Level_21.unity
+    guid: bd9fdfd7b9475ce4eab8cd7c6011b074
+  - enabled: 1
+    path: Assets/Color Bump 3d/Scenes/Level_22.unity
+    guid: dc8f213993f2a2540a7f6ea78f1f8bf5
+  - enabled: 1
+    path: Assets/Color Bump 3d/Scenes/Level_23.unity
+    guid: d9bd8b0fd3a234246add0f3649db5af0
+  - enabled: 1
+    path: Assets/Color Bump 3d/Scenes/Level_24.unity
+    guid: 5a198599964141f4f898e98eadeea17b
+  - enabled: 1
+    path: Assets/Color Bump 3d/Scenes/Level_25.unity
+    guid: 94db7627ccc0fdf43bbff0ee508038c3
   m_configObjects: {}
