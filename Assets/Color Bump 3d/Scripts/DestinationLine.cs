@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DestinationLine : MonoBehaviour
 {
+    public GameObject[] finishEffect;
 	private void Update()
 	{
 		Vector3 position = PlayerController.instance.transform.position;
@@ -13,7 +14,11 @@ public class DestinationLine : MonoBehaviour
 			if (position3.y > -1f)
 			{
 				GameController.instance.GameComplete();
-				base.enabled = false;
+                for(int i=0;i< finishEffect.Length; i++)
+                {
+                    finishEffect[i].SetActive(true);
+                }
+                base.enabled = false;
 			}
 		}
 		if (GameController.instance.isGameOver)

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using DG.Tweening;
 
 public class PlayerController : MonoBehaviour
@@ -12,6 +13,7 @@ public class PlayerController : MonoBehaviour
 	public float constanceForce;
 
 	public Material colorMaterial;
+    public Material ballMaterial;
 
 	public GameObject spherePieces;
 
@@ -31,10 +33,21 @@ public class PlayerController : MonoBehaviour
 
 	public static PlayerController instance;
 
+    private int sceneNumber;
+    
+
 	private void Awake()
 	{
 		instance = this;
-	}
+
+        string name = SceneManager.GetActiveScene().name;
+        sceneNumber = int.Parse(name.Split('_')[1]);
+
+        if (sceneNumber == 4 && PlayerPrefs.GetInt("isShownThropies", 0) == 1)
+        {
+            GameObject.Find("Thropies_Panel").SetActive(false);
+        }
+    }
 
 	private void Start()
 	{
@@ -124,19 +137,28 @@ public class PlayerController : MonoBehaviour
 	{
 		if (Input.GetMouseButtonDown(0))
 		{
-            if (isGrab == false && isGrabAnim == false) {
-                GrabPaper();
+            if(sceneNumber == 4 && PlayerPrefs.GetInt("isShownThropies", 0) == 0)
+            {
+                PlayerPrefs.SetInt("isShownThropies", 1);
+                GameObject.Find("Thropies_Panel").SetActive(false);
             }
-			//else if (!started && !CUtils.IsPointerOverUIObject() && isGrab == true)
-			//{
-   //             StartPlaying();
-			//}
-			Ray ray = fixedCamera.ScreenPointToRay(Input.mousePosition);
-			if (plane.Raycast(ray, out float enter))
-			{
-				lastPoint = ray.GetPoint(enter);
-			}
-			isButtonDown = true;
+            else
+            {
+                if (isGrab == false && isGrabAnim == false)
+                {
+                    GrabPaper();
+                }
+                //else if (!started && !CUtils.IsPointerOverUIObject() && isGrab == true)
+                //{
+                //             StartPlaying();
+                //}
+                Ray ray = fixedCamera.ScreenPointToRay(Input.mousePosition);
+                if (plane.Raycast(ray, out float enter))
+                {
+                    lastPoint = ray.GetPoint(enter);
+                }
+                isButtonDown = true;
+            }
 		}
 		else if (Input.GetMouseButtonUp(0))
 		{
@@ -163,7 +185,7 @@ public class PlayerController : MonoBehaviour
 				meshRenderer = collision.gameObject.GetComponentInChildren<MeshRenderer>();
 			}
 			//if (meshRenderer != null && meshRenderer.sharedMaterial == colorMaterial && !Prefs.PlayerNeverDie)
-            if (meshRenderer != null && meshRenderer.sharedMaterial != transform.GetComponent<SkinnedMeshRenderer>().sharedMaterial && !Prefs.PlayerNeverDie)
+            if (meshRenderer != null && meshRenderer.sharedMaterial != ballMaterial && !Prefs.PlayerNeverDie)
             {
 				Dead();
 				Sound.instance.Play(Sound.Others.HitObject);

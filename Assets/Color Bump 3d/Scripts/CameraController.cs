@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-	public GameObject player;
+	public GameObject virtualPlayer;
 
 	[HideInInspector]
 	public Vector3 offset;
@@ -10,14 +10,14 @@ public class CameraController : MonoBehaviour
     bool isFinished = false;
 	public void Start()
 	{
-		offset = transform.position - player.transform.position;
+		offset = transform.position - virtualPlayer.transform.position;
 	}
 
 	private void LateUpdate()
 	{
         if (isFinished == true)
             return;
-		transform.position = player.transform.position + offset;
+		transform.position = virtualPlayer.transform.position + offset;
 	}
 
     public void GameOver()

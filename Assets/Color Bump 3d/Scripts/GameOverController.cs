@@ -12,7 +12,7 @@ public class GameOverController : MonoBehaviour
 
     private Vector3 initPos;
     private Vector3 initRetryPos; 
-    public int countTime = 4;
+    public int countTime = 5;
 
     void Awake()
     {
@@ -55,6 +55,7 @@ public class GameOverController : MonoBehaviour
             txt_timer.text = (countTime - cnt).ToString();
         }
 
+        GameController.instance.Replay();
     }
 
     private void OnDisable()

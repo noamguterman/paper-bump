@@ -64,4 +64,14 @@ public class MoveOnLine4 : MonoBehaviour
 	{
 		iTween.MoveTo(base.gameObject, iTween.Hash("position", pointB, "looptype", "loop", "speed", speed, "easeType", iTween.EaseType.linear));
 	}
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (!collision.gameObject.CompareTag("Plane"))
+        {
+            Debug.Log(collision.gameObject.name);
+            iTween.Stop();
+            transform.GetComponent<Rigidbody>().isKinematic = false;
+        }
+    }
 }

@@ -32,7 +32,7 @@ public class AdsManager : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(ShowBannerWhenReady());
+        //StartCoroutine(ShowBannerWhenReady());
     }
 
     IEnumerator ShowBannerWhenReady()

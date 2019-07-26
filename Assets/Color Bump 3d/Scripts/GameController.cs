@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
 
     [Header("Material")]
     public Material obstacleMaterial;
-    public Material planeMaterial;
+    //public Material planeMaterial;
     public Material defaultMaterial;
 
     [Header("Start_Stop Line")]
@@ -88,7 +88,7 @@ public class GameController : MonoBehaviour
 				num2 = UnityEngine.Random.Range(0, obstacleColors.Length);
 			}
 			while (num == num2);
-			planeMaterial.color = obstacleColors[num];
+			//planeMaterial.color = obstacleColors[num];
 			obstacleMaterial.color = obstacleColors[num2];
 		}
 		for (int i = 0; i < Const.TOTAL_LEVEL; i++)
@@ -217,14 +217,14 @@ public class GameController : MonoBehaviour
 
         if(completeCount % 2 == 1)
         {
-            Timer.Schedule(this, 1f, delegate
+            Timer.Schedule(this, 3f, delegate
             {
                 NextLevel();
             });
         }
         else
         {
-            Timer.Schedule(this, 1.5f, delegate
+            Timer.Schedule(this, 2.5f, delegate
             {
                 //virtualPlayer.GetComponent<ConstantForce>().force = Vector3.forward * 4f;
                 upgradeScreen.SetActive(true);
