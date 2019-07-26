@@ -3,8 +3,9 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
 	public GameObject virtualPlayer;
+    public GameObject player;
 
-	[HideInInspector]
+    [HideInInspector]
 	public Vector3 offset;
 
     bool isFinished = false;
@@ -18,6 +19,9 @@ public class CameraController : MonoBehaviour
         if (isFinished == true)
             return;
 		transform.position = virtualPlayer.transform.position + offset;
+
+        float distance = Vector3.Distance(player.transform.position, virtualPlayer.transform.position);
+
 	}
 
     public void GameOver()
