@@ -21,7 +21,11 @@ public class CameraController : MonoBehaviour
 		transform.position = virtualPlayer.transform.position + offset;
 
         float distance = Vector3.Distance(player.transform.position, virtualPlayer.transform.position);
-
+        distance = Mathf.Clamp(distance, 7, 15);
+        float zoom = 60 * 7 / distance;
+        zoom = Mathf.Clamp(zoom, 47, 60);
+        //transform.GetChild(0).GetComponent<Camera>().fieldOfView = zoom;
+        
 	}
 
     public void GameOver()

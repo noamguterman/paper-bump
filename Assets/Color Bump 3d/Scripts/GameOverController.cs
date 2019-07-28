@@ -39,6 +39,7 @@ public class GameOverController : MonoBehaviour
 
     public void HidePanel()
     {
+        StopAllCoroutines();
         iTween.MoveTo(gameObject, iTween.Hash("x", initPos.x, "islocal", true, "time", 1f));
     }
 

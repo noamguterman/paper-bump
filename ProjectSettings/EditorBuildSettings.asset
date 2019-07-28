@@ -51,10 +51,10 @@ EditorBuildSettings:
     path: Assets/Color Bump 3d/Scenes/Level_14.unity
     guid: 56718677b16327744a34bda9545bd817
   - enabled: 1
-    path: Assets/Color Bump 3d/Scenes/Level_15.unity
+    path: Assets/Color Bump 3d/Scenes/Level_16.unity
     guid: dc216337ba36985478a9bd9b0f865f26
   - enabled: 1
-    path: Assets/Color Bump 3d/Scenes/Level_16.unity
+    path: Assets/Color Bump 3d/Scenes/Level_15.unity
     guid: 2dff3694b37178447953ec99b76566ae
   - enabled: 1
     path: Assets/Color Bump 3d/Scenes/Level_17.unity
