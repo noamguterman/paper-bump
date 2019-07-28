@@ -24,7 +24,8 @@ public class CameraController : MonoBehaviour
         distance = Mathf.Clamp(distance, 7, 15);
         float zoom = 60 * 7 / distance;
         zoom = Mathf.Clamp(zoom, 47, 60);
-        //transform.GetChild(0).GetComponent<Camera>().fieldOfView = zoom;
+
+        transform.GetChild(0).GetComponent<Camera>().fieldOfView = Mathf.Lerp(transform.GetChild(0).GetComponent<Camera>().fieldOfView, zoom, Time.deltaTime * 15);
         
 	}
 
