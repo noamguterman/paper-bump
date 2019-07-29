@@ -143,8 +143,7 @@ public class GameController : MonoBehaviour
 
     public void ReviveGame()
     {
-        AdsManager.Instance.ShowRewardedVideo("Revive");
-
+#if UNITY_EDITOR
         RemovePassedObstacles();
         player.transform.position = new Vector3(0, 0.38f, player.transform.position.z - 5);
         virtualPlayer.transform.position = player.transform.position;
@@ -157,6 +156,11 @@ public class GameController : MonoBehaviour
         gameOverScreen.GetComponent<GameOverController>().HidePanel();
 
         Invoke("Play_Continue", 1);
+#else
+        AdsManager.Instance.ShowRewardedVideo("Revive");
+#endif
+
+
     }
 
     void Play_Continue()
