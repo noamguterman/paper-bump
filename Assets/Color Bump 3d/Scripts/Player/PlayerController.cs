@@ -126,6 +126,14 @@ public class PlayerController : MonoBehaviour
         StartPlaying();
     }
 
+    public void FlatPaper()
+    {
+        transform.localEulerAngles = new Vector3(-90, 0, 0);
+        transform.GetComponent<Animator>().SetTrigger("Flat");
+        SoundManager.Instance.PlayPaperGrabSFX();
+        rb.Sleep();
+    }
+
 
     public void ResetPlaying()
     {
@@ -190,6 +198,10 @@ public class PlayerController : MonoBehaviour
 				Dead();
 				Sound.instance.Play(Sound.Others.HitObject);
 			}
+            else
+            {
+                SoundManager.Instance.PlayObstacleSFX();
+            }
 		}
 	}
 }

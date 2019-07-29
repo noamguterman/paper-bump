@@ -143,6 +143,8 @@ public class GameController : MonoBehaviour
 
     public void ReviveGame()
     {
+        AdsManager.Instance.ShowRewardedVideo("Revive");
+
         RemovePassedObstacles();
         player.transform.position = new Vector3(0, 0.38f, player.transform.position.z - 5);
         virtualPlayer.transform.position = player.transform.position;
@@ -207,8 +209,11 @@ public class GameController : MonoBehaviour
 		virtualPlayer.GetComponent<ConstantForce>().enabled = false;
 		Music.instance.Pause();
         SoundManager.Instance.PlayVictorySFX();
+        PlayerController.instance.FlatPaper();
 
-		if (Prefs.UnlockedLevel == sceneNumber)
+        mainCamera.LookatPlayer();
+
+        if (Prefs.UnlockedLevel == sceneNumber)
 		{
 			Prefs.UnlockedLevel++;
 		}
@@ -217,14 +222,14 @@ public class GameController : MonoBehaviour
 
         if(completeCount % 2 == 1)
         {
-            Timer.Schedule(this, 3f, delegate
+            Timer.Schedule(this, 4f, delegate
             {
                 NextLevel();
             });
         }
         else
         {
-            Timer.Schedule(this, 2.5f, delegate
+            Timer.Schedule(this, 3.5f, delegate
             {
                 //virtualPlayer.GetComponent<ConstantForce>().force = Vector3.forward * 4f;
                 upgradeScreen.SetActive(true);
@@ -299,4 +304,32 @@ public class GameController : MonoBehaviour
 			lastEscapeTime = Time.time;
 		}
 	}
+
+
+    public void OnRVRewardReceived(string str)
+    {
+        if(str == "Revive")
+        {
+            RemovePassedObstacles();
+            player.transform.position = new Vector3(0, 0.38f, player.transform.position.z - 5);
+            virtualPlayer.transform.position = player.transform.position;
+            Music.instance.Play();
+
+            GameObject.Find("PlayerDeath(Clone)").SetActive(false);
+
+            isGameOver = false;
+            mainCamera.Revive();
+            gameOverScreen.GetComponent<GameOverController>().HidePanel();
+
+            Invoke("Play_Continue", 1);
+        }
+    }
+
+    public void OnRVRewardReceived_Fail(string str)
+    {
+        if (str == "Revive")
+        {
+            Replay();
+        }
+    }
 }

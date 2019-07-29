@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class CameraController : MonoBehaviour
 {
@@ -28,6 +29,27 @@ public class CameraController : MonoBehaviour
         transform.GetChild(0).GetComponent<Camera>().fieldOfView = Mathf.Lerp(transform.GetChild(0).GetComponent<Camera>().fieldOfView, zoom, Time.deltaTime * 15);
         
 	}
+
+    public void LookatPlayer()
+    {
+        isFinished = true;
+        iTween.MoveTo(gameObject, iTween.Hash("z", player.transform.position.z + offset.z * 2, "time", 2));
+        //iTween.MoveTo(transform.GetChild(0).gameObject, iTween.Hash("fieldOfView", 60, "time", 1.5f));
+
+        Hashtable ht = new Hashtable();
+        ht.Add("from", transform.GetChild(0).GetComponent<Camera>().fieldOfView);
+        ht.Add("to", 60f);
+        ht.Add("time", 2f);
+        ht.Add("onupdate", "ChangeView");
+        ht.Add("easyType", "easeOutExpo");
+        iTween.ValueTo(gameObject, ht);
+
+    }
+
+    private void ChangeView(float newValue)
+    {
+        transform.GetChild(0).GetComponent<Camera>().fieldOfView = newValue;
+    }
 
     public void GameOver()
     {

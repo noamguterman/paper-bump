@@ -27,7 +27,7 @@ public class AdsManager : MonoBehaviour
         
         //Initialize Unity
         Monetization.Initialize("3222239", false);
-        Advertisement.Initialize("3222239", false);
+        //Advertisement.Initialize("3222239", false);
     }
 
     private void Start()
@@ -35,17 +35,17 @@ public class AdsManager : MonoBehaviour
         //StartCoroutine(ShowBannerWhenReady());
     }
 
-    IEnumerator ShowBannerWhenReady()
-    {
-        while (!Advertisement.IsReady("bannerPlacement"))
-        {
-            Debug.Log("Banner not ready");
-            yield return new WaitForSeconds(0.5f);
-        }
-        Debug.Log("Showing Banner");
-        Advertisement.Banner.Show("bannerPlacement");
-        Advertisement.Banner.SetPosition(BannerPosition.BOTTOM_CENTER);
-    }
+    //IEnumerator ShowBannerWhenReady()
+    //{
+    //    while (!Advertisement.IsReady("bannerPlacement"))
+    //    {
+    //        Debug.Log("Banner not ready");
+    //        yield return new WaitForSeconds(0.5f);
+    //    }
+    //    Debug.Log("Showing Banner");
+    //    Advertisement.Banner.Show("bannerPlacement");
+    //    Advertisement.Banner.SetPosition(BannerPosition.BOTTOM_CENTER);
+    //}
 
     public void ShowInterstitial(string str)
     {
@@ -105,8 +105,8 @@ public class AdsManager : MonoBehaviour
     private void SendSuccessMsg()
     {
         Debug.Log("@@@@  =" + targetStr);
-        GameObject.Find("Scripts").SendMessage("OnRVRewardReceived", targetStr);
-        GameObject.Find("Canvas").BroadcastMessage("OnRVRewardReceived", targetStr);
+        GameObject.Find("GameController").SendMessage("OnRVRewardReceived", targetStr);
+        //GameObject.Find("Canvas").BroadcastMessage("OnRVRewardReceived", targetStr);
 
         targetStr = "";
     }
@@ -115,8 +115,8 @@ public class AdsManager : MonoBehaviour
     {
 
         Debug.Log("%%% =" + targetStr);
-        GameObject.Find("Scripts").SendMessage("OnRVRewardReceived_Fail", targetStr);
-        GameObject.Find("Canvas").SendMessage("OnRVRewardReceived_Fail", targetStr);
+        GameObject.Find("GameController").SendMessage("OnRVRewardReceived_Fail", targetStr);
+        //GameObject.Find("Canvas").SendMessage("OnRVRewardReceived_Fail", targetStr);
 
         targetStr = "";
     }
