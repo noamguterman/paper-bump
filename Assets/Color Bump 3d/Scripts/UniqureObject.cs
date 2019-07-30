@@ -27,6 +27,7 @@ public class UniqureObject : MonoBehaviour
             Debug.LogError("Unique Obtain");
             isFalling = true;
             PlayerPrefs.SetInt("UniqueItem_" + (uniqureId + 1).ToString(), 1);
+            GameController.instance.HasUniqueItem(uniqureId + 1);
             ShowGetAnimalEffect();
         }
     }
