@@ -27,11 +27,34 @@ public class UpgradeController : MonoBehaviour
 
     private void OnEnable()
     {
-        txt_progress.text = ((int)(GameController.instance.completeProgress * 100)).ToString() + "% COMPLETED";
+        txt_progress.text = "";// ((int)(GameController.instance.completeProgress * 100)).ToString() + "% COMPLETED";
 
         iTween.MoveTo(gameObject, iTween.Hash("x", 0, "islocal", true, "time", 1f));
         iTween.MoveTo(btn_next, iTween.Hash("y", -550, "islocal", true, "time", 1f, "delay", 2));
 
+        pageNum = 0;
+        for (int i = 0; i < 8; i++)
+        {
+            if (PlayerPrefs.GetInt("UniqueItem_" + i.ToString(), 0) == 1)
+                continue;
+            else
+            {
+                if (i > 4)
+                {
+                    pageNum = 1;
+                    Invoke("ShowPage", 1);
+                    return;
+                }
+                else
+                {
+                    pageNum = 0;
+                    Invoke("ShowPage", 1);
+                    return;
+                }
+            }
+        }
+
+        pageNum = 1;
         Invoke("ShowPage", 1);
     }
 

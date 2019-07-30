@@ -14,10 +14,12 @@ public class GameOverController : MonoBehaviour
     private Vector3 initRetryPos; 
     public int countTime = 5;
 
+    private IEnumerator cor;
     void Awake()
     {
         initPos = transform.localPosition;
         initRetryPos = btn_retry.transform.localPosition;
+        cor = TimeCountAction();
     }
 
     private void OnEnable()
@@ -32,14 +34,14 @@ public class GameOverController : MonoBehaviour
         txt_timer.text = countTime.ToString();
         txt_progress.text = ((int)(GameController.instance.completeProgress * 100)).ToString() + "% COMPLETED";
 
-        StartCoroutine(TimeCountAction());
+        StartCoroutine(cor);
 
         iTween.MoveTo(btn_retry, iTween.Hash("y", -330f, "islocal", true, "time", 1f, "delay", 1));
     }
 
     public void HidePanel()
     {
-        StopAllCoroutines();
+        StopCoroutine(cor);
         iTween.MoveTo(gameObject, iTween.Hash("x", initPos.x, "islocal", true, "time", 1f));
     }
 
@@ -64,6 +66,6 @@ public class GameOverController : MonoBehaviour
         transform.localPosition = initPos;
         btn_retry.transform.localPosition = initRetryPos;
 
-        StopAllCoroutines();
+        StopCoroutine(cor);
     }
 }

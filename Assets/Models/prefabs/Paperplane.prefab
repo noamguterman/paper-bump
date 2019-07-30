@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 660842653853765183}
   - component: {fileID: 5078108486048479029}
   - component: {fileID: 8974171319874316936}
+  - component: {fileID: 8773048380114806620}
   m_Layer: 0
   m_Name: Paperplane
   m_TagString: Obstacle
@@ -109,3 +110,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &8773048380114806620
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660842653851832569}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.62, y: 0.66, z: 0.20774725}
+  m_Center: {x: 0, y: 0.06, z: -0.103873625}

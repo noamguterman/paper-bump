@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
 
     [Header("Material")]
     public Material obstacleMaterial;
-    //public Material planeMaterial;
+    public Material planeMaterial;
     public Material defaultMaterial;
 
     [Header("Start_Stop Line")]
@@ -26,6 +26,8 @@ public class GameController : MonoBehaviour
 
     public TextMeshPro stageStartText;
     public TextMeshPro stageEndText;
+
+    public TextMeshPro trophiesText;
 
     public GameObject startLine;
     public GameObject destinationLine;
@@ -47,13 +49,20 @@ public class GameController : MonoBehaviour
 
 	public GameObject levelSelectorScreen;
 
-	public GameObject menuObject;
+	//public GameObject menuObject;
 	public Toggle playerNeverDie;
 
 	[Header("Color Manager")]
 	public Color[] obstacleColors;
 
-	[HideInInspector]	public bool isGameOver;
+    [Header("Floor Color Manager")]
+    public Color[] floorColors;
+
+    [Header("Sky Color Manager")]
+    public Color[] skyColors;
+
+
+    [HideInInspector]	public bool isGameOver;
     [HideInInspector]   public bool isRevive = false;
 
     private int sceneNumber;
@@ -62,12 +71,14 @@ public class GameController : MonoBehaviour
 
 	private float lastEscapeTime = -10f;
 
-    public static int completeCount = 0;
+    public GameObject curvedObj;
 	private void Awake()
 	{
 		instance = this;
 		Application.targetFrameRate = 60;
-	}
+        GameObject obj = GameObject.Instantiate(curvedObj);
+        obj.GetComponent<VacuumShaders.CurvedWorld.CurvedWorld_Controller>().pivotPoint = Camera.main.transform;
+    }
 
 	private void Start()
 	{
@@ -79,6 +90,16 @@ public class GameController : MonoBehaviour
         txt_currentLevel.text = sceneNumber.ToString();
         txt_nextLevel.text = (sceneNumber + 1).ToString();
 
+        if(sceneNumber >= 4)
+        {
+            int num = Mathf.Min(FindObjectOfType<AnimalManager>().GetAnimalIdx_ToShow(), 8);
+            trophiesText.text = "TROPHIES " + num.ToString() + "/8";
+        }
+        else
+        {
+            trophiesText.text = "";
+        }
+
         if (GameState.numPlayed != 0)
 		{
 			int num = UnityEngine.Random.Range(0, obstacleColors.Length);
@@ -88,17 +109,19 @@ public class GameController : MonoBehaviour
 				num2 = UnityEngine.Random.Range(0, obstacleColors.Length);
 			}
 			while (num == num2);
-			//planeMaterial.color = obstacleColors[num];
-			obstacleMaterial.color = obstacleColors[num2];
+            //planeMaterial.color = obstacleColors[num];
+            planeMaterial.color = floorColors[num2];
+            obstacleMaterial.color = obstacleColors[num2];
+            Camera.main.backgroundColor = skyColors[num2];
 		}
 		for (int i = 0; i < Const.TOTAL_LEVEL; i++)
 		{
 			GameObject gameObject = UnityEngine.Object.Instantiate(levelButtonPrefab, levelContainer);
 			gameObject.transform.localScale = Vector3.one;
 		}
-		menuObject.SetActive(GameConfig.instance.enableTesting);
+		//menuObject.SetActive(GameConfig.instance.enableTesting);
 		playerNeverDie.isOn = Prefs.PlayerNeverDie;
-		Music.instance.PlayAMusic();
+		//Music.instance.PlayAMusic();
 		GameState.numPlayed++;
 
         distance = Mathf.Abs(destinationLine.transform.position.z - startLine.transform.position.z);
@@ -123,7 +146,7 @@ public class GameController : MonoBehaviour
             isRevive = true;
 
             virtualPlayer.GetComponent<ConstantForce>().force = Vector3.zero;
-            Music.instance.Pause();
+            //Music.instance.Pause();
             Timer.Schedule(this, 1.5f, delegate
             {
                 virtualPlayer.GetComponent<ConstantForce>().force = Vector3.forward * 4f;
@@ -147,7 +170,7 @@ public class GameController : MonoBehaviour
         RemovePassedObstacles();
         player.transform.position = new Vector3(0, 0.38f, player.transform.position.z - 5);
         virtualPlayer.transform.position = player.transform.position;
-        Music.instance.Play();
+        //Music.instance.Play();
 
         GameObject.Find("PlayerDeath(Clone)").SetActive(false);
 
@@ -196,7 +219,7 @@ public class GameController : MonoBehaviour
     {
         PlayerController.instance.enabled = false;
         virtualPlayer.GetComponent<ConstantForce>().enabled = false;
-        Music.instance.Pause();
+        //Music.instance.Pause();
 
         Timer.Schedule(this, 1.5f, delegate
         {
@@ -209,11 +232,12 @@ public class GameController : MonoBehaviour
 
     public void GameComplete()
 	{
+        PlayerController.instance.FlatPaper();
+
         PlayerController.instance.enabled = false;
 		virtualPlayer.GetComponent<ConstantForce>().enabled = false;
-		Music.instance.Pause();
+		//Music.instance.Pause();
         SoundManager.Instance.PlayVictorySFX();
-        PlayerController.instance.FlatPaper();
 
         mainCamera.LookatPlayer();
 
@@ -222,9 +246,7 @@ public class GameController : MonoBehaviour
 			Prefs.UnlockedLevel++;
 		}
 
-        completeCount++;
-
-        if(completeCount % 2 == 1)
+        if(sceneNumber < 4)
         {
             Timer.Schedule(this, 4f, delegate
             {
@@ -265,10 +287,24 @@ public class GameController : MonoBehaviour
 
 	public void Replay()
 	{
+        if(hasUniqueItem == true)
+        {
+            PlayerPrefs.SetInt("UniqueItem_" + uniqueIndex.ToString(), 0);
+        }
+        Time.timeScale = 1;
 		CUtils.ReloadScene();
 	}
 
-	public void OnPlayerNeverDieValueChanged()
+    private bool hasUniqueItem = false;
+    private int uniqueIndex;
+    public void HasUniqueItem(int uniqueIdx)
+    {
+        hasUniqueItem = true;
+        uniqueIndex = uniqueIdx;
+    }
+
+
+    public void OnPlayerNeverDieValueChanged()
 	{
 		Prefs.PlayerNeverDie = playerNeverDie.isOn;
 	}
@@ -317,14 +353,13 @@ public class GameController : MonoBehaviour
             RemovePassedObstacles();
             player.transform.position = new Vector3(0, 0.38f, player.transform.position.z - 5);
             virtualPlayer.transform.position = player.transform.position;
-            Music.instance.Play();
+            //Music.instance.Play();
 
             GameObject.Find("PlayerDeath(Clone)").SetActive(false);
 
             isGameOver = false;
             mainCamera.Revive();
             gameOverScreen.GetComponent<GameOverController>().HidePanel();
-
             Invoke("Play_Continue", 1);
         }
     }

@@ -196,7 +196,7 @@ public class PlayerController : MonoBehaviour
             if (meshRenderer != null && meshRenderer.sharedMaterial != ballMaterial && !Prefs.PlayerNeverDie)
             {
 				Dead();
-				Sound.instance.Play(Sound.Others.HitObject);
+				//Sound.instance.Play(Sound.Others.HitObject);
 			}
             else
             {

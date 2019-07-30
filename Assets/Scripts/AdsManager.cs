@@ -104,6 +104,7 @@ public class AdsManager : MonoBehaviour
 
     private void SendSuccessMsg()
     {
+        Time.timeScale = 1;
         Debug.Log("@@@@  =" + targetStr);
         GameObject.Find("GameController").SendMessage("OnRVRewardReceived", targetStr);
         //GameObject.Find("Canvas").BroadcastMessage("OnRVRewardReceived", targetStr);
@@ -113,7 +114,7 @@ public class AdsManager : MonoBehaviour
 
     private void SendFailMsg()
     {
-
+        Time.timeScale = 1;
         Debug.Log("%%% =" + targetStr);
         GameObject.Find("GameController").SendMessage("OnRVRewardReceived_Fail", targetStr);
         //GameObject.Find("Canvas").SendMessage("OnRVRewardReceived_Fail", targetStr);
