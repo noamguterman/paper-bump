@@ -8,7 +8,14 @@ public class AnimalManager : MonoBehaviour
 
     void Start()
     {
-        Instantiate(prefab_Animals[GetAnimalIdx_ToShow()], transform);
+        if(PlayerPrefs.GetInt("CollectAll", 0) == 1)
+        {
+            Instantiate(prefab_Animals[Random.Range(0,12)], transform);
+        }
+        else
+        {
+            Instantiate(prefab_Animals[GetAnimalIdx_ToShow()], transform);
+        }
     }
 
     public int GetAnimalIdx_ToShow()

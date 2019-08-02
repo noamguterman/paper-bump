@@ -34,7 +34,8 @@ public class PlayerController : MonoBehaviour
 	public static PlayerController instance;
 
     private int sceneNumber;
-    
+
+    private bool isStartAnim = true;
 
 	private void Awake()
 	{
@@ -47,11 +48,14 @@ public class PlayerController : MonoBehaviour
         {
             GameObject.Find("Thropies_Panel").SetActive(false);
         }
+
+        rb = GetComponent<Rigidbody>();
+
+        PlayStartAnim();
     }
 
 	private void Start()
 	{
-		rb = GetComponent<Rigidbody>();
 		plane = new Plane(Vector3.up, Vector3.zero);
 		speed *= 1.3f;
 	}
@@ -77,30 +81,20 @@ public class PlayerController : MonoBehaviour
 		rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVeclocity);
 	}
 
+    float deathTime;
 	public void Dead()
 	{
 		base.gameObject.SetActive(false);
 		GameObject gameObject = Instantiate(spherePieces, base.transform.position, Quaternion.identity);
         rb.Sleep();
-		//Vector3 force = rb.velocity * 10f;
-		//IEnumerator enumerator = gameObject.transform.GetEnumerator();
-		//try
-		//{
-		//	while (enumerator.MoveNext())
-		//	{
-		//		Transform transform = (Transform)enumerator.Current;
-		//		transform.GetComponent<Rigidbody>().AddForce(force);
-		//	}
-		//}
-		//finally
-		//{
-		//	IDisposable disposable;
-		//	if ((disposable = (enumerator as IDisposable)) != null)
-		//	{
-		//		disposable.Dispose();
-		//	}
-		//}
-		GameController.instance.GameOver();
+
+        if((Time.time - deathTime) < 0.5f)
+        {
+            return;
+        }
+        deathTime = Time.time;
+
+        GameController.instance.GameOver();
         SoundManager.Instance.PlayGameOverSFX();
 	}
 
@@ -109,6 +103,21 @@ public class PlayerController : MonoBehaviour
 		started = true;
 		GameController.instance.StartPlaying();
 	}
+
+    public void PlayStartAnim()
+    {
+        Vector3 firstPos = transform.position;
+        transform.position -= new Vector3(0, 0, 4);
+        rb.isKinematic = true;
+        iTween.MoveTo(gameObject, iTween.Hash("z", firstPos.z, "time", 1.5f));
+        Invoke("FinishStartAnim", 1);
+    }
+
+    private void FinishStartAnim()
+    {
+        isStartAnim = false;
+        GameController.instance.ShowHand();
+    }
 
     public void GrabPaper()
     {
@@ -123,6 +132,7 @@ public class PlayerController : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
         isGrab = true;
+        rb.isKinematic = false;
         StartPlaying();
     }
 
@@ -132,6 +142,10 @@ public class PlayerController : MonoBehaviour
         transform.GetComponent<Animator>().SetTrigger("Flat");
         SoundManager.Instance.PlayPaperGrabSFX();
         rb.Sleep();
+
+        rb.isKinematic = true;
+        transform.GetComponent<Collider>().enabled = false;
+        iTween.MoveTo(gameObject, iTween.Hash("z", transform.position.z + 50, "time", 2.5f, "delay", 2));
     }
 
 
@@ -143,6 +157,9 @@ public class PlayerController : MonoBehaviour
 
 	private void Update()
 	{
+        if (isStartAnim == true)
+            return;
+
 		if (Input.GetMouseButtonDown(0))
 		{
             if(sceneNumber == 4 && PlayerPrefs.GetInt("isShownThropies", 0) == 0)

@@ -92,8 +92,16 @@ public class GameController : MonoBehaviour
 
         if(sceneNumber >= 4)
         {
-            int num = Mathf.Min(FindObjectOfType<AnimalManager>().GetAnimalIdx_ToShow(), 8);
-            trophiesText.text = "TROPHIES " + num.ToString() + "/8";
+            int num = Mathf.Min(FindObjectOfType<AnimalManager>().GetAnimalIdx_ToShow(), 12);
+
+            if(PlayerPrefs.GetInt("CollectAll", 0) == 1)
+            {
+                trophiesText.text = "TROPHIES 12 / 12";
+            }
+            else
+            {
+                trophiesText.text = "TROPHIES " + num.ToString() + "/12";
+            }
         }
         else
         {
@@ -129,10 +137,15 @@ public class GameController : MonoBehaviour
         virtualPlayer.GetComponent<ConstantForce>().force = new Vector3(0,0,12);
     }
 
+    public void ShowHand()
+    {
+        handImage.enabled = true;
+    }
+
 	public void StartPlaying()
 	{
 		virtualPlayer.GetComponent<ConstantForce>().enabled = true;
-		handImage.CrossFadeAlpha(0f, 0.3f, ignoreTimeScale: true);
+		handImage.CrossFadeAlpha(0f, 0.3f, true);
 		arrowFading = true;
 	}
 
@@ -246,7 +259,7 @@ public class GameController : MonoBehaviour
 			Prefs.UnlockedLevel++;
 		}
 
-        if(sceneNumber < 4)
+        if(sceneNumber < 4 || PlayerPrefs.GetInt("CollectAll", 0) == 1)
         {
             Timer.Schedule(this, 4f, delegate
             {
@@ -260,12 +273,25 @@ public class GameController : MonoBehaviour
                 //virtualPlayer.GetComponent<ConstantForce>().force = Vector3.forward * 4f;
                 upgradeScreen.SetActive(true);
                 mainCamera.Complete();
+                foreach(MoveOnLine4 mov in FindObjectsOfType<MoveOnLine4>())
+                {
+                    if(mov.gameObject.name.Contains("Paperplane"))
+                    {
+                        mov.gameObject.SetActive(false);
+                    }
+                }
+                
             });
         }
 	}
 
 	public void NextLevel()
 	{
+        if (hasUniqueItem == true && PlayerPrefs.GetInt("UniqueItem_12", 0) == 1)
+        {
+            PlayerPrefs.SetInt("CollectAll", 1);
+        }
+
 		int num = Mathf.Min(Const.TOTAL_LEVEL, sceneNumber + 1);
         SceneManager.LoadScene("Level_" + num);
 	}
@@ -287,10 +313,14 @@ public class GameController : MonoBehaviour
 
 	public void Replay()
 	{
-        if(hasUniqueItem == true)
+        if(PlayerPrefs.GetInt("CollectAll", 0) == 0)
         {
-            PlayerPrefs.SetInt("UniqueItem_" + uniqueIndex.ToString(), 0);
+            if (hasUniqueItem == true)
+            {
+                PlayerPrefs.SetInt("UniqueItem_" + uniqueIndex.ToString(), 0);
+            }
         }
+        
         Time.timeScale = 1;
 		CUtils.ReloadScene();
 	}

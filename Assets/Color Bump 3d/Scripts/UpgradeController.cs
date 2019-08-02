@@ -33,13 +33,19 @@ public class UpgradeController : MonoBehaviour
         iTween.MoveTo(btn_next, iTween.Hash("y", -550, "islocal", true, "time", 1f, "delay", 2));
 
         pageNum = 0;
-        for (int i = 0; i < 8; i++)
+        for (int i = 0; i < 12; i++)
         {
             if (PlayerPrefs.GetInt("UniqueItem_" + i.ToString(), 0) == 1)
                 continue;
             else
             {
-                if (i > 4)
+                if(i > 8)
+                {
+                    pageNum = 2;
+                    Invoke("ShowPage", 2);
+                    return;
+                }
+                else if (i > 4)
                 {
                     pageNum = 1;
                     Invoke("ShowPage", 1);
@@ -54,8 +60,8 @@ public class UpgradeController : MonoBehaviour
             }
         }
 
-        pageNum = 1;
-        Invoke("ShowPage", 1);
+        pageNum = 2;
+        Invoke("ShowPage", 2);
     }
 
     private void ShowPage()

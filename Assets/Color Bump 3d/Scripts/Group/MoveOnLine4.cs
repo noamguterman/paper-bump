@@ -69,8 +69,7 @@ public class MoveOnLine4 : MonoBehaviour
     {
         if (!collision.gameObject.CompareTag("Plane"))
         {
-            Debug.Log(collision.gameObject.name);
-            iTween.Stop();
+            iTween.Stop(gameObject);
             transform.GetComponent<Rigidbody>().isKinematic = false;
         }
     }

@@ -10,11 +10,8 @@ public class UniqureObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(transform.GetComponent<Rigidbody>().centerOfMass);
-        //transform.GetComponent<Rigidbody>().centerOfMass = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (isFalling == true)
@@ -35,8 +32,20 @@ public class UniqureObject : MonoBehaviour
     void ShowGetAnimalEffect()
     {
         particle.SetActive(true);
-        transform.GetComponent<Rigidbody>().isKinematic = true;
-        transform.GetComponent<Collider>().enabled = false;
+        if(transform.GetComponent<Rigidbody>() != null)
+            transform.GetComponent<Rigidbody>().isKinematic = true;
+        else
+            transform.GetChild(0).GetComponent<Rigidbody>().isKinematic = true;
+
+        foreach (Collider col in transform.GetComponents<Collider>())
+        {
+            col.enabled = false;
+        }
+        foreach (Collider col in transform.GetComponentsInChildren<Collider>())
+        {
+            col.enabled = false;
+        }
+        //transform.GetComponent<Collider>().enabled = false;
 
         transform.position = new Vector3(0,0, Camera.main.transform.position.z + 23);
         transform.localEulerAngles = new Vector3(-90,0,40);
