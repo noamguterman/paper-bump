@@ -218,31 +218,6 @@ public class GameController : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            GameComplete_test();
-        }
-        else if (Input.GetKeyDown(KeyCode.R))
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    void GameComplete_test()
-    {
-        PlayerController.instance.enabled = false;
-        virtualPlayer.GetComponent<ConstantForce>().enabled = false;
-        //Music.instance.Pause();
-
-        Timer.Schedule(this, 1.5f, delegate
-        {
-            //virtualPlayer.GetComponent<ConstantForce>().force = Vector3.forward * 4f;
-            upgradeScreen.SetActive(true);
-            FindObjectOfType<CharacterRoot>().ShowPage(0);
-            mainCamera.Complete();
-        });
-    }
-
     public void GameComplete()
 	{
         PlayerController.instance.FlatPaper();

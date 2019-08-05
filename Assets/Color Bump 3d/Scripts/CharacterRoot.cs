@@ -14,7 +14,7 @@ public class CharacterRoot : MonoBehaviour
 
     private void Start()
     {
-        Invoke("SetParent", 0.1f);
+        //Invoke("SetParent", 0.1f);
     }
 
     private void SetParent()
