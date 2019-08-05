@@ -30,9 +30,14 @@ public class UpgradeController : MonoBehaviour
         maxPage = (characterRoot.characters.Length - 1) / 4 + 1;
         Debug.Log("MaxPage = " + maxPage);
     }
+    private void Update()
+    {
+        Debug.Log(scrollrect.verticalNormalizedPosition);
 
+    }
     private void OnEnable()
     {
+
         txt_progress.text = "";// ((int)(GameController.instance.completeProgress * 100)).ToString() + "% COMPLETED";
 
         iTween.MoveTo(gameObject, iTween.Hash("x", 0, "islocal", true, "time", 1f));
@@ -49,6 +54,15 @@ public class UpgradeController : MonoBehaviour
             }
         }
 
-        scrollrect.verticalNormalizedPosition = (float)pageNum / 12;
+        //Canvas.ForceUpdateCanvases();
+        //scrollrect.verticalNormalizedPosition = 1 - (float)pageNum / 12;
+        StartCoroutine(ResetPos());
+    }
+
+    IEnumerator ResetPos()
+    {
+        yield return new WaitForEndOfFrame();
+        scrollrect.verticalNormalizedPosition = 1 - (float)pageNum / 12;
+
     }
 }
