@@ -11726,11 +11726,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3449670867807034183, guid: f026990b2a7bdf34fadab2f176bb5502,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3449670867807033614, guid: f026990b2a7bdf34fadab2f176bb5502,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -11740,6 +11735,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 45.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4526471495717038110, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449670867807034183, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4526471495717038111, guid: f026990b2a7bdf34fadab2f176bb5502,
         type: 3}
@@ -11755,10 +11760,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 955910577, guid: f026990b2a7bdf34fadab2f176bb5502, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3449670867807027844, guid: f026990b2a7bdf34fadab2f176bb5502,
         type: 3}
@@ -11780,14 +11781,18 @@ PrefabInstance:
       propertyPath: m_Force.z
       value: 18
       objectReference: {fileID: 0}
-    - target: {fileID: 4526471495717038110, guid: f026990b2a7bdf34fadab2f176bb5502,
+    - target: {fileID: 7421633842074506522, guid: f026990b2a7bdf34fadab2f176bb5502,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 955910577, guid: f026990b2a7bdf34fadab2f176bb5502, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 955910576, guid: f026990b2a7bdf34fadab2f176bb5502, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4526471494799923435, guid: f026990b2a7bdf34fadab2f176bb5502,
         type: 3}

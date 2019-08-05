@@ -835,6 +835,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1 &50778427
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,6 +1301,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &105223481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1480,6 +1484,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &124546899
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2236,6 +2242,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!4 &183017900 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
@@ -3326,6 +3334,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &335835077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4129,6 +4139,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &446957393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5203,6 +5215,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!4 &595031914 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
@@ -5390,6 +5404,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &612409373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5604,6 +5620,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &632234412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5775,6 +5793,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!4 &637994276 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 926145131632094581, guid: f08f173fec7b7e24d8acae9deb77f625,
@@ -6049,6 +6069,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!4 &667951779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
@@ -6363,6 +6385,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &748350963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6533,6 +6557,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1 &753231790 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7573240096603309489, guid: 44b75ff1fe260884891a3597eaf4d26b,
@@ -6554,6 +6580,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &756054675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7216,6 +7244,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &865395625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7391,6 +7421,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1 &889305169
 GameObject:
   m_ObjectHideFlags: 0
@@ -7664,6 +7696,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &902086040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7839,6 +7873,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1 &916838042
 GameObject:
   m_ObjectHideFlags: 0
@@ -8234,6 +8270,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1 &948838025 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7573240096603309489, guid: 44b75ff1fe260884891a3597eaf4d26b,
@@ -8255,6 +8293,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &950136317
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8777,6 +8817,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &1027039732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9439,6 +9481,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1 &1097190728
 GameObject:
   m_ObjectHideFlags: 0
@@ -9586,6 +9630,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!114 &1126897371 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3449670867807027802, guid: f026990b2a7bdf34fadab2f176bb5502,
@@ -9898,6 +9944,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &1154212554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9994,6 +10042,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &1154886936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10380,6 +10430,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &1187164982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11386,6 +11438,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &1257484014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12285,6 +12339,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &1368410459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12931,6 +12987,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &1440495114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13414,6 +13472,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!4 &1459724808 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 926145131632094581, guid: f08f173fec7b7e24d8acae9deb77f625,
@@ -13790,6 +13850,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &1504085237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13886,6 +13948,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1 &1504168628 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7573240096603309489, guid: 44b75ff1fe260884891a3597eaf4d26b,
@@ -13907,6 +13971,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &1509347131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14008,6 +14074,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &1523257782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14253,6 +14321,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!4 &1552076323 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
@@ -14435,6 +14505,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &1578396359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15991,6 +16063,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &1754182282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16167,6 +16241,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1 &1792878918 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7573240096603309489, guid: 44b75ff1fe260884891a3597eaf4d26b,
@@ -16188,6 +16264,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &1794822658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16704,6 +16782,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &1839579099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18409,6 +18489,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!4 &1961922038 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 338573510934219230, guid: 383df88b36d43d748b1291e82c4f9928,
@@ -18580,6 +18662,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &1975383954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19078,6 +19162,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &2035383529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19376,6 +19462,8 @@ MonoBehaviour:
   distanceToPlayer: 3
   force: {x: 0.5, y: 0.5, z: 0.5}
   torque: {x: 1, y: 1, z: 1}
+  isRandom: 0
+  rndValue_X: 0.5
 --- !u!1001 &2145240078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19468,26 +19556,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3449670867807027802, guid: f026990b2a7bdf34fadab2f176bb5502,
-        type: 3}
-      propertyPath: obstacleColors.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3449670867807027802, guid: f026990b2a7bdf34fadab2f176bb5502,
-        type: 3}
-      propertyPath: obstacleColors.Array.data[0].r
-      value: 0.5377358
-      objectReference: {fileID: 0}
-    - target: {fileID: 3449670867807027802, guid: f026990b2a7bdf34fadab2f176bb5502,
-        type: 3}
-      propertyPath: obstacleColors.Array.data[0].g
-      value: 0.2288238
-      objectReference: {fileID: 0}
-    - target: {fileID: 3449670867807027802, guid: f026990b2a7bdf34fadab2f176bb5502,
-        type: 3}
-      propertyPath: obstacleColors.Array.data[0].b
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3449670867807034153, guid: f026990b2a7bdf34fadab2f176bb5502,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19573,10 +19641,10 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3449670867807034183, guid: f026990b2a7bdf34fadab2f176bb5502,
+    - target: {fileID: 2627392800154748303, guid: f026990b2a7bdf34fadab2f176bb5502,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3449670867807033614, guid: f026990b2a7bdf34fadab2f176bb5502,
         type: 3}
@@ -19593,6 +19661,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 92.91
       objectReference: {fileID: 0}
+    - target: {fileID: 4526471495717038110, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449670867807034183, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449670867807035827, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.85
+      objectReference: {fileID: 0}
     - target: {fileID: 4526471495717038111, guid: f026990b2a7bdf34fadab2f176bb5502,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -19608,15 +19691,73 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 11.332031
       objectReference: {fileID: 0}
+    - target: {fileID: 3449670867807027870, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.378906
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449670867807027852, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -41.16797
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449670867807027844, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449670867807027844, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -41.30078
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449670867807027840, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449670867807027840, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -65.48828
+      objectReference: {fileID: 0}
     - target: {fileID: 3449670867807030347, guid: f026990b2a7bdf34fadab2f176bb5502,
         type: 3}
       propertyPath: m_Force.z
       value: 18
       objectReference: {fileID: 0}
-    - target: {fileID: 4526471495717038110, guid: f026990b2a7bdf34fadab2f176bb5502,
+    - target: {fileID: 3449670867807027802, guid: f026990b2a7bdf34fadab2f176bb5502,
         type: 3}
-      propertyPath: m_IsActive
+      propertyPath: obstacleColors.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449670867807027802, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: obstacleColors.Array.data[0].r
+      value: 0.5377358
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449670867807027802, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: obstacleColors.Array.data[0].g
+      value: 0.2288238
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449670867807027802, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: obstacleColors.Array.data[0].b
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7421633842074506522, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 955910577, guid: f026990b2a7bdf34fadab2f176bb5502, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 955910576, guid: f026990b2a7bdf34fadab2f176bb5502, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4526471494799923435, guid: f026990b2a7bdf34fadab2f176bb5502,
         type: 3}
@@ -19628,17 +19769,9 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 955910577, guid: f026990b2a7bdf34fadab2f176bb5502, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 23449402, guid: f026990b2a7bdf34fadab2f176bb5502, type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 955910576, guid: f026990b2a7bdf34fadab2f176bb5502, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 298313928, guid: f026990b2a7bdf34fadab2f176bb5502, type: 3}
       propertyPath: m_SizeDelta.y
@@ -19849,46 +19982,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 740688240}
-    - target: {fileID: 3449670867807027844, guid: f026990b2a7bdf34fadab2f176bb5502,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3449670867807027844, guid: f026990b2a7bdf34fadab2f176bb5502,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -41.30078
-      objectReference: {fileID: 0}
-    - target: {fileID: 3449670867807027840, guid: f026990b2a7bdf34fadab2f176bb5502,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3449670867807027840, guid: f026990b2a7bdf34fadab2f176bb5502,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -65.48828
-      objectReference: {fileID: 0}
-    - target: {fileID: 2627392800154748303, guid: f026990b2a7bdf34fadab2f176bb5502,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3449670867807035827, guid: f026990b2a7bdf34fadab2f176bb5502,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 3449670867807027870, guid: f026990b2a7bdf34fadab2f176bb5502,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -20.378906
-      objectReference: {fileID: 0}
-    - target: {fileID: 3449670867807027852, guid: f026990b2a7bdf34fadab2f176bb5502,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -41.16797
-      objectReference: {fileID: 0}
     - target: {fileID: 1075927483, guid: f026990b2a7bdf34fadab2f176bb5502, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 13.099609
