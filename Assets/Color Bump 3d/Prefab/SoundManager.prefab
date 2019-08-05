@@ -45,13 +45,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfxButton: {fileID: 8300000, guid: f9d1921e364c4484f8fecd23c654b448, type: 3}
-  sfxReward: {fileID: 8300000, guid: d58dd21ea0c7692428d6230d96620a8f, type: 3}
-  sfxPaperGrab: {fileID: 8300000, guid: 0735d9170486a7b4092686d94d89ed89, type: 3}
-  sfxObstacle: {fileID: 8300000, guid: 9922a12f34d0a084aab32de985459723, type: 3}
-  sfxGift: {fileID: 8300000, guid: 86648a96beac2684a8d3418dda6c238a, type: 3}
-  sfxAnimal: {fileID: 0}
-  sfxVictory: {fileID: 8300000, guid: 2adb6e85b1815c14ea15849ecc935342, type: 3}
-  sfxGameOver: {fileID: 8300000, guid: 25e71273e2ea7a447b05b009c6d2c09d, type: 3}
+  sfxReward: {fileID: 0}
+  sfxPaperGrab: {fileID: 8300000, guid: e9b538b6009ec0b4fb885a358aa0e243, type: 3}
+  sfxObstacle: {fileID: 0}
+  sfxGift: {fileID: 8300000, guid: c53ce98630db5914cb14a5a41a3ccd1a, type: 3}
+  sfxAnimal: {fileID: 8300000, guid: c53ce98630db5914cb14a5a41a3ccd1a, type: 3}
+  sfxVictory: {fileID: 8300000, guid: 880dace1f9dc5dd418a4551fae79f5ea, type: 3}
+  sfxGameOver: {fileID: 8300000, guid: 83ed64e9203697a458784828848a6461, type: 3}
 --- !u!82 &214904544
 AudioSource:
   m_ObjectHideFlags: 0
@@ -62,7 +62,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7a7d5e1117fe7fa41b3efb7e81312618, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

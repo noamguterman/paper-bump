@@ -14,6 +14,12 @@ public class UpgradeController : MonoBehaviour
 
     int pageNum = 0;
     int maxPage;
+
+    public Image[] trophiesBG;
+    public Image[] trophies;
+
+    public Sprite[] img_BG;
+    public ScrollRect scrollrect;
     void Awake()
     {
         characterRoot = FindObjectOfType<CharacterRoot>();
@@ -30,54 +36,19 @@ public class UpgradeController : MonoBehaviour
         txt_progress.text = "";// ((int)(GameController.instance.completeProgress * 100)).ToString() + "% COMPLETED";
 
         iTween.MoveTo(gameObject, iTween.Hash("x", 0, "islocal", true, "time", 1f));
-        iTween.MoveTo(btn_next, iTween.Hash("y", -550, "islocal", true, "time", 1f, "delay", 2));
+        iTween.MoveTo(btn_next, iTween.Hash("y", -450, "islocal", true, "time", 1f, "delay", 2));
 
         pageNum = 0;
         for (int i = 0; i < 12; i++)
         {
             if (PlayerPrefs.GetInt("UniqueItem_" + i.ToString(), 0) == 1)
-                continue;
-            else
             {
-                if(i > 8)
-                {
-                    pageNum = 2;
-                    Invoke("ShowPage", 2);
-                    return;
-                }
-                else if (i > 4)
-                {
-                    pageNum = 1;
-                    Invoke("ShowPage", 1);
-                    return;
-                }
-                else
-                {
-                    pageNum = 0;
-                    Invoke("ShowPage", 1);
-                    return;
-                }
+                pageNum = i;
+                trophiesBG[i].sprite = img_BG[1];
+                trophies[i].enabled = true;
             }
         }
 
-        pageNum = 2;
-        Invoke("ShowPage", 2);
-    }
-
-    private void ShowPage()
-    {
-        characterRoot.ShowPage(pageNum);
-    }
-
-    private void OnDisable()
-    {
-    }
-
-    public void onclick_Down()
-    {
-        pageNum++;
-        if (pageNum == maxPage)
-            pageNum = 0;
-        ShowPage();
+        scrollrect.verticalNormalizedPosition = (float)pageNum / 12;
     }
 }

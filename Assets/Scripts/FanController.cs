@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 
 public class FanController : MonoBehaviour
 {
@@ -39,6 +38,7 @@ public class FanController : MonoBehaviour
 
     public GameObject virtualPlayer;
     Vector3 distance;
+    public GameObject fanObj;
     private void Start()
     {
         distance = transform.position - virtualPlayer.transform.position;
@@ -46,5 +46,6 @@ public class FanController : MonoBehaviour
     private void Update()
     {
         transform.position = virtualPlayer.transform.position + distance;
+        //fanObj.transform.Rotate(Vector3.forward, Time.deltaTime * 36);
     }
 }

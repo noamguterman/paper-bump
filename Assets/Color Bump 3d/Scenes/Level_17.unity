@@ -131,7 +131,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -284,6 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virtualPlayer: {fileID: 1584550760}
+  fanObj: {fileID: 0}
 --- !u!1001 &50890820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -309,7 +310,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -383,7 +384,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -457,7 +458,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -536,7 +537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -559,7 +560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -622,7 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -726,7 +727,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -800,7 +801,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -867,7 +868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -890,7 +891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -919,7 +920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -955,7 +956,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -1021,7 +1022,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edee0c800c1e55644b4dbecfc02c389f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.19
+      value: 6.46
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edee0c800c1e55644b4dbecfc02c389f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1061,15 +1062,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edee0c800c1e55644b4dbecfc02c389f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edee0c800c1e55644b4dbecfc02c389f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edee0c800c1e55644b4dbecfc02c389f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: edee0c800c1e55644b4dbecfc02c389f, type: 3}
       propertyPath: m_Controller
@@ -1083,6 +1084,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7180f46c497f2e44bb2fe186b790b06a, type: 2}
+    - target: {fileID: 400004, guid: edee0c800c1e55644b4dbecfc02c389f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edee0c800c1e55644b4dbecfc02c389f, type: 3}
 --- !u!1 &353997946 stripped
@@ -1103,7 +1108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -1202,7 +1207,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -1282,7 +1287,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373540593}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 7.42}
+  m_LocalPosition: {x: 0, y: 0, z: -2.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 389508844}
@@ -1350,7 +1355,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -1417,7 +1422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -1446,7 +1451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -1475,7 +1480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -1516,7 +1521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -1539,7 +1544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -1569,7 +1574,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -1638,7 +1643,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -1705,7 +1710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -1728,7 +1733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -1757,7 +1762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -1871,7 +1876,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -1950,7 +1955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -2059,7 +2064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -2128,7 +2133,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -2202,7 +2207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -2231,7 +2236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -2260,7 +2265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -2370,7 +2375,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -2588,7 +2593,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -2729,7 +2734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -2764,7 +2769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -2794,7 +2799,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -2868,7 +2873,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -2935,7 +2940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -2965,7 +2970,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -3032,7 +3037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -3055,7 +3060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -3117,7 +3122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -3140,7 +3145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -3247,7 +3252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -3284,7 +3289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257660790}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 3.36, y: 0.35, z: -1.13}
+  m_LocalPosition: {x: 3.36, y: 0.35, z: 3.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 736302248}
@@ -3426,7 +3431,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -3500,7 +3505,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -3575,7 +3580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367960345}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.388, y: 0.39, z: 4.42}
+  m_LocalPosition: {x: -3.388, y: 0.39, z: 10.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1234624296}
@@ -3637,7 +3642,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -3711,7 +3716,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -3778,7 +3783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -3808,7 +3813,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -3888,7 +3893,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -3962,7 +3967,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716049203}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.34, z: -9.6}
+  m_LocalPosition: {x: 0, y: 0.34, z: -15.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1268799496}
@@ -4015,7 +4020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac7ea40ebd5b4eeac7abd5916ddb848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spacing: {x: 1.2, y: 5}
+  spacing: {x: 1.2, y: 4}
   constraint: 0
   constraintCount: 5
   adjustLocalScale: 1
@@ -4051,7 +4056,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -4125,7 +4130,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -4199,7 +4204,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -4267,7 +4272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -4297,7 +4302,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -4370,7 +4375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -4399,7 +4404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -4440,7 +4445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -4463,7 +4468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -4493,7 +4498,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -4566,7 +4571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5284cbe8457822f8f8e8ff4911528f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToPlayer: 25
+  distanceToPlayer: 20
   force: {x: 0, y: 0, z: -6}
   torque: {x: 0, y: 0, z: 0}
   isRandom: 1
@@ -4596,7 +4601,7 @@ PrefabInstance:
     - target: {fileID: 769429741351814111, guid: 4e891d2dc8f2dc34993e9cd64c622f4a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 54.96
+      value: 44.61
       objectReference: {fileID: 0}
     - target: {fileID: 769429741351814111, guid: 4e891d2dc8f2dc34993e9cd64c622f4a,
         type: 3}
@@ -4665,7 +4670,7 @@ PrefabInstance:
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7573240096603675025, guid: 44b75ff1fe260884891a3597eaf4d26b,
         type: 3}
@@ -4826,25 +4831,25 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3449670867807034183, guid: f026990b2a7bdf34fadab2f176bb5502,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3449670867807033614, guid: f026990b2a7bdf34fadab2f176bb5502,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 58.9
       objectReference: {fileID: 0}
-    - target: {fileID: 3449670867807035827, guid: f026990b2a7bdf34fadab2f176bb5502,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.94
-      objectReference: {fileID: 0}
     - target: {fileID: 3965618901094791713, guid: f026990b2a7bdf34fadab2f176bb5502,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 63.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449670867807034183, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449670867807035827, guid: f026990b2a7bdf34fadab2f176bb5502,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.94
       objectReference: {fileID: 0}
     - target: {fileID: 4526471495717038111, guid: f026990b2a7bdf34fadab2f176bb5502,
         type: 3}

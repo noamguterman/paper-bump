@@ -217,7 +217,7 @@ public class PlayerController : MonoBehaviour
 			}
             else
             {
-                SoundManager.Instance.PlayObstacleSFX();
+                //SoundManager.Instance.PlayObstacleSFX();
             }
 		}
 	}
