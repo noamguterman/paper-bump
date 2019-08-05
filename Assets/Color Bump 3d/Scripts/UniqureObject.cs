@@ -32,7 +32,8 @@ public class UniqureObject : MonoBehaviour
     void ShowGetAnimalEffect()
     {
         particle.SetActive(true);
-        if(transform.GetComponent<Rigidbody>() != null)
+        SoundManager.Instance.PlayGiftSFX();
+        if (transform.GetComponent<Rigidbody>() != null)
             transform.GetComponent<Rigidbody>().isKinematic = true;
         else
             transform.GetChild(0).GetComponent<Rigidbody>().isKinematic = true;
