@@ -262,7 +262,7 @@ public class GameController : MonoBehaviour
 
 	public void NextLevel()
 	{
-        if (hasUniqueItem == true && PlayerPrefs.GetInt("UniqueItem_12", 0) == 1)
+        if (hasUniqueItem == true && PlayerPrefs.GetInt("UniqueItem_11", 0) == 1)
         {
             PlayerPrefs.SetInt("CollectAll", 1);
         }

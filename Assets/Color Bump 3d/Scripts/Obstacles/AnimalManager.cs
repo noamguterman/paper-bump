@@ -25,7 +25,7 @@ public class AnimalManager : MonoBehaviour
             if (PlayerPrefs.GetInt("UniqueItem_" + i.ToString(), 0) == 1)
                 continue;
             else
-                return i-1;
+                return i;
         }
 
         return prefab_Animals.Length - 1;

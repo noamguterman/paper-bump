@@ -9,7 +9,7 @@ public class CharacterRoot : MonoBehaviour
     private Vector3 offset;
     private void Awake()
     {
-        PlayerPrefs.SetInt("UniqueItem_" + 0, 1);
+        //PlayerPrefs.SetInt("UniqueItem_" + 0, 1);
     }
 
     private void Start()

@@ -84,6 +84,9 @@ public class PlayerController : MonoBehaviour
     float deathTime;
 	public void Dead()
 	{
+        if (GameObject.Find("PlayerDeath(Clone)") != null)
+            return;
+
 		base.gameObject.SetActive(false);
 		GameObject gameObject = Instantiate(spherePieces, base.transform.position, Quaternion.identity);
         rb.Sleep();

@@ -30,11 +30,7 @@ public class UpgradeController : MonoBehaviour
         maxPage = (characterRoot.characters.Length - 1) / 4 + 1;
         Debug.Log("MaxPage = " + maxPage);
     }
-    private void Update()
-    {
-        Debug.Log(scrollrect.verticalNormalizedPosition);
 
-    }
     private void OnEnable()
     {
 
